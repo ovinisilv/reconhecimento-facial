@@ -32,7 +32,7 @@
 
             const imageData = canvas.toDataURL('image/png');
 
-            fetch('processar_webcam.php', {
+            fetch('processar_webcam.html', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ image: imageData })
